@@ -10,7 +10,7 @@ export function App() {
         className="absolute inset-0 z-[-2]"
         style={{
           background: `
-            radial-gradient(circle at 50% 30%, #3b0a0a 0%, #0d0000 60%, #000000 100%)
+            black
           `
         }} />
 
@@ -45,7 +45,7 @@ export function App() {
               fontFamily: "'Montserrat', sans-serif"
             }}>
 
-            7-7 Freedom Day
+            <span className={"text-red-800"}>7-7</span> <span>Freedom Day</span>
           </h1>
 
           <div className="flex flex-col items-center space-y-4">
@@ -84,8 +84,7 @@ export function App() {
               fontFamily: "'Montserrat', sans-serif"
             }}>
 
-            "Every second counts on the road to freedom. The countdown has
-            begun."
+            "Malayo na pero malayo pa rin, kapit lang kapatid, lapit na rin :')."
           </p>
           <div className="mt-6 text-red-600/60 text-xl">✦</div>
         </motion.div>

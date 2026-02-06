@@ -88,7 +88,7 @@ export function CountdownDisplay() {
     <div className="flex flex-col items-center w-full max-w-4xl mx-auto space-y-12">
       {/* Countdown Digits */}
       <motion.div
-        className="flex flex-wrap justify-center items-center gap-4 md:gap-8 lg:gap-12"
+        className="flex flex-nowrap justify-center items-center gap-2 sm:gap-3 md:gap-5 lg:gap-8"
         variants={containerVariants}
         initial="hidden"
         animate="visible">
@@ -205,13 +205,13 @@ function TimeUnit({
 
       <div className="relative z-10 flex flex-col items-center">
         <span
-          className="text-5xl md:text-7xl lg:text-8xl text-white drop-shadow-lg tracking-tight tabular-nums font-bold"
+          className="text-[clamp(2rem,7vw,5.5rem)] text-white drop-shadow-lg tracking-tight tabular-nums font-bold"
           style={FONT_STYLE}>
 
           {value}
         </span>
         <span
-          className="mt-2 text-sm md:text-base tracking-widest uppercase text-red-500 opacity-80 font-bold"
+          className="mt-2 text-[clamp(0.55rem,2.2vw,0.9rem)] tracking-widest uppercase text-red-500 opacity-80 font-bold"
           style={FONT_STYLE}>
 
           {label}
